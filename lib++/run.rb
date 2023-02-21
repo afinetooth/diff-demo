@@ -21,7 +21,7 @@ module Run
   end
 
   def this_is_covered
-    0
+    1
   end
 
   def covered_in_another_node
