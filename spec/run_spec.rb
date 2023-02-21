@@ -11,13 +11,13 @@ describe Run do
     expect(1).to eq 1
   end
 
-  it "runs new and covered" do
-    expect(Run.new_and_covered).to eq :ok
-
-    expect(RunTwo.covered).to eq 1
-  end
-
-  # it "covers new method" do
-  #   expect(RunTwo.new_and_covered).to eq 1
+  # it "runs new and covered" do
+  #   expect(Run.new_and_covered).to eq :ok
+  #
+  #   expect(RunTwo.covered).to eq 1
   # end
+
+  it "covers new method" do
+    expect(RunTwo.new_and_covered).to eq 1
+  end
 end
