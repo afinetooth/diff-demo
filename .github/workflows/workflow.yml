@@ -37,5 +37,6 @@ jobs:
     - name: Run tests and push coverage to coveralls
       env:
         COVERALLS_ENDPOINT: ${{ secrets.COVERALLS_ENDPOINT }}
-        COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
+        COVERALLS_REPO_TOKEN: https://enterprise-demo.coveralls.io/
+        COVERALLS_NOISY: true
       run: bundle exec rspec
